@@ -2,6 +2,15 @@
 
 @section('page-description', 'Generador de páginas web corporativas con intranet enfocada para su uso por parte de autónomos o pequeñas empresas')
 
+@section('preload')
+  <link rel="preload" href="{{ asset('images/carousel-img-1.jpg') }}" as="image">
+  <link rel="preload" href="{{ asset('images/carousel-img-2.jpg') }}" as="image">
+  <link rel="preload" href="{{ asset('images/carousel-img-3.jpg') }}" as="image">
+  <link rel="preload" href="{{ asset('images/circle-img-1.jpg') }}" as="image">
+  <link rel="preload" href="{{ asset('images/circle-img-2.jpg') }}" as="image">
+  <link rel="preload" href="{{ asset('images/circle-img-3.jpg') }}" as="image">
+@endsection
+
 @section('first-container', '')
 
 @section('content')
@@ -13,32 +22,32 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+      <img src="{{ asset('images/carousel-img-1.jpg') }}" alt="Imagen 1" class="d-block w-100" style="max-height: 400px; object-fit: cover; ">
       <div class="container">
         <div class="carousel-caption text-start">
-          <h1>1 Parte Carrousel</h1>
-          <p class="opacity-75">Conoce nuestros servicios</p>
-          <p><a class="btn btn-lg btn-primary" href="{{ route('pricing.index') }}">Servicios</a></p>
+          <h1>¡Regístrate!</h1>
+          <p class="opacity-75">Regístrate para obtener un descuento y empezar tu servicio con nosotros hoy mismo</p>
+          <p><a class="btn btn-lg btn-dark" href="{{ route('register') }}">Registrarse</a></p>
         </div>
       </div>
     </div>
     <div class="carousel-item">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+      <img src="{{ asset('images/carousel-img-2.jpg') }}" alt="Imagen 2" class="d-block w-100" style="max-height: 400px; object-fit: cover;">
       <div class="container">
         <div class="carousel-caption">
-          <h1>2 Parte Carrousel</h1>
-          <p>Regístrate para obtener un descuento</p>
-          <p><a class="btn btn-lg btn-primary" href="{{ route('register') }}">Regístrate</a></p>
+          <h1>¿Tienes dudas?</h1>
+          <p class="opacity-75">Contacta con alguno de nuestros especialistas y te asesorarán en lo que necesites</p>
+          <p><a class="btn btn-lg btn-dark" href="#">Contactar</a></p>
         </div>
       </div>
     </div>
     <div class="carousel-item">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+      <img src="{{ asset('images/carousel-img-3.jpg') }}" alt="Imagen 3" class="d-block w-100" style="max-height: 400px; object-fit: cover;">
       <div class="container">
         <div class="carousel-caption text-end">
-          <h1>3 Parte Carrousel</h1>
-          <p>Algo mas importante a añadir</p>
-          <p><a class="btn btn-lg btn-primary" href="#">Ir</a></p>
+          <h1>No solo Hosting</h1>
+          <p class="opacity-75">Conoce todos nuestros servicios, especialmente diseñados para cubrir tus necesidades</p>
+          <p><a class="btn btn-lg btn-dark" href="{{ route('pricing.index') }}">Servicios y Tarifas</a></p>
         </div>
       </div>
     </div>
@@ -57,19 +66,19 @@
 <div class="container marketing mt-3 text-center">
   <div class="row">
     <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-      <h2 class="fw-normal">Header 1</h2>
-      <p>Servicio Rápido</p>
+      <img src="{{ asset('images/circle-img-1.jpg') }}" alt="Imagen Circle 1" class="bd-placeholder-img rounded-circle" width="140" height="140">
+      <h2 class="fw-normal">Seguro</h2>
+      <p>Seguridad ante cualquier ataque</p>
     </div>
     <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-      <h2 class="fw-normal">Header 2</h2>
-      <p>Servicio Seguro</p>
+      <img src="{{ asset('images/circle-img-2.jpg') }}" alt="Imagen Circle 2" class="bd-placeholder-img rounded-circle" width="140" height="140">
+      <h2 class="fw-normal">Personalizado</h2>
+      <p>Totalmente configurado a tu medida</p>
     </div>
     <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-      <h2 class="fw-normal">Header 3</h2>
-      <p>Único en el mercado</p>
+      <img src="{{ asset('images/circle-img-3.jpg') }}" alt="Imagen Circle 3" class="bd-placeholder-img rounded-circle" width="140" height="140">
+      <h2 class="fw-normal">Rápido</h2>
+      <p>El mejor bando de ancha para tu web</p>
     </div>
   </div>
 
