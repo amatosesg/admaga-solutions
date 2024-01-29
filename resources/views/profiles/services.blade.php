@@ -43,7 +43,7 @@
                         <td>{{ $service['service_name'] }}</td>
                         <td>{{ $service['status'] }}</td>
                         <td>
-                            @if($service['status'] == 'paid')
+                            @if($service['status'] == 'Pendiente')
                                 <a class="btn btn-link" href="{{ route('profiles.configure.services', ['os' => $service['order_id'] . '-' . $service['service_id']]) }}">
                                     Configurar
                                 </a>
