@@ -36,7 +36,7 @@ class ServiceCartController extends Controller
         $cookie = $this->cartService->makeCookie($cart);
 
         // TODO De momento volvemos atrás, hay que mandar al carrito cuando este hecho para que pague
-        return redirect()->back()->cookie($cookie);
+        return redirect()->route('carts.index')->cookie($cookie);
     }
 
     /**
