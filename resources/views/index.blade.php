@@ -106,11 +106,5 @@
     </div>
   </div>
   <hr class="featurette-divider">
-
 </div>
-
-<footer class="container">
-  <p class="float-end link-info"><a href="#">Volver arriba</a></p>
-  <p>&copy; 2024 ADMAGA Solutions</p>
-</footer>
 @endsection
