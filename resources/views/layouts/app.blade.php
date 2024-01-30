@@ -10,6 +10,9 @@
 
     <title>@yield('title', config('app.name', 'ADMAGA Solutions'))</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ asset('images/favicon-32x32.png') }}" type="image/x-icon">
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
