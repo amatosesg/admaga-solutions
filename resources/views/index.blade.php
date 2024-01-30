@@ -86,11 +86,11 @@
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading fw-normal lh-1">Primera ventaja de nuestro servicio <span class="text-body-secondary">A destacar</span></h2>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim quam, placerat non porttitor non, suscipit vel ipsum. Aliquam nec elit nibh. Sed vehicula sit amet nisl a bibendum. Nulla varius purus id felis tincidunt, vel hendrerit quam pretium. Aliquam egestas, odio quis porta fringilla, ante lacus vulputate dui, non laoreet dolor velit ut elit. Donec vehicula libero eu nibh scelerisque rutrum. Nullam id lacinia felis. Integer maximus eros id molestie blandit. Nunc aliquet consectetur vulputate. Quisque sollicitudin egestas ex non eleifend. Phasellus eu enim nec ante luctus fringilla. Nullam sapien dolor, suscipit fermentum massa vel, viverra tempus sem.</p>
+      <h2 class="featurette-heading fw-normal lh-1">Diseñado para autónomos y pequeñas empresas</h2>
+      <p class="lead">Nuestro sistema esta desarrollado desde el inicio enfocado y pensando en aquellas personas que inician una aventura económica y cuentan con poca gente en su equipo. ¿Cumples esos requisitos? ¡Nuestros servicios son para ti!</p>
     </div>
     <div class="col-md-5">
-      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">Placeholder Imagen 500x500</text></svg>
+      <img src="{{ asset('images/information-img-1.jpg') }}" alt="Imagen Information 1" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300">
     </div>
   </div>
 
@@ -98,26 +98,13 @@
 
   <div class="row featurette">
     <div class="col-md-7 order-md-2">
-      <h2 class="featurette-heading fw-normal lh-1">Algo mas a mostrar <span class="text-body-secondary">Importante</span></h2>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim quam, placerat non porttitor non, suscipit vel ipsum. Aliquam nec elit nibh. Sed vehicula sit amet nisl a bibendum. Nulla varius purus id felis tincidunt, vel hendrerit quam pretium. Aliquam egestas, odio quis porta fringilla, ante lacus vulputate dui, non laoreet dolor velit ut elit. Donec vehicula libero eu nibh scelerisque rutrum. Nullam id lacinia felis. Integer maximus eros id molestie blandit. Nunc aliquet consectetur vulputate. Quisque sollicitudin egestas ex non eleifend. Phasellus eu enim nec ante luctus fringilla. Nullam sapien dolor, suscipit fermentum massa vel, viverra tempus sem.</p>
+      <h2 class="featurette-heading fw-normal lh-1">Servicio Estable y funcionando en menos de 24h</h2>
+      <p class="lead">Obtén hoy tu servicio con nosotros y empieza a tener una mejor imagen y una mejor gestión de tu empresa junto a nosotros. En menos de 24 horas dispondrás de una base de datos y servicio hosting totalmente funcional, con acceso a una intranet creada especialmente para ti. Regístra a tus empleados, ponles horarios, etc.. ¡Si algo que necesitas no se encuentra ahí, dinoslo y lo crearemos para ti!</p>
     </div>
     <div class="col-md-5 order-md-1">
-      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">Placeholder Imagen 500x500</text></svg>
+      <img src="{{ asset('images/information-img-2.jpg') }}" alt="Imagen Information 1" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300">
     </div>
   </div>
-
-  {{-- <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading fw-normal lh-1">Más cosas a destacar <span class="text-body-secondary">Importante</span></h2>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim quam, placerat non porttitor non, suscipit vel ipsum. Aliquam nec elit nibh. Sed vehicula sit amet nisl a bibendum. Nulla varius purus id felis tincidunt, vel hendrerit quam pretium. Aliquam egestas, odio quis porta fringilla, ante lacus vulputate dui, non laoreet dolor velit ut elit. Donec vehicula libero eu nibh scelerisque rutrum. Nullam id lacinia felis. Integer maximus eros id molestie blandit. Nunc aliquet consectetur vulputate. Quisque sollicitudin egestas ex non eleifend. Phasellus eu enim nec ante luctus fringilla. Nullam sapien dolor, suscipit fermentum massa vel, viverra tempus sem.</p>
-    </div>
-    <div class="col-md-5">
-      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-    </div>
-  </div>
-  --}}
   <hr class="featurette-divider">
 
 </div>
