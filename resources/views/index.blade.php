@@ -2,6 +2,15 @@
 
 @section('page-description', 'Generador de páginas web corporativas con intranet enfocada para su uso por parte de autónomos o pequeñas empresas')
 
+@section('preload')
+  <link rel="preload" href="{{ asset('images/carousel-img-1.jpg') }}" as="image">
+  <link rel="preload" href="{{ asset('images/carousel-img-2.jpg') }}" as="image">
+  <link rel="preload" href="{{ asset('images/carousel-img-3.jpg') }}" as="image">
+  <link rel="preload" href="{{ asset('images/circle-img-1.jpg') }}" as="image">
+  <link rel="preload" href="{{ asset('images/circle-img-2.jpg') }}" as="image">
+  <link rel="preload" href="{{ asset('images/circle-img-3.jpg') }}" as="image">
+@endsection
+
 @section('first-container', '')
 
 @section('content')
@@ -13,32 +22,32 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+      <img src="{{ asset('images/carousel-img-1.jpg') }}" alt="Imagen 1" class="d-block w-100" style="max-height: 400px; object-fit: cover; ">
       <div class="container">
         <div class="carousel-caption text-start">
-          <h1>1 Parte Carrousel</h1>
-          <p class="opacity-75">Conoce nuestros servicios</p>
-          <p><a class="btn btn-lg btn-primary" href="{{ route('pricing.index') }}">Servicios</a></p>
+          <h1>¡Regístrate!</h1>
+          <p class="opacity-75">Regístrate para obtener un descuento y empezar tu servicio con nosotros hoy mismo</p>
+          <p><a class="btn btn-lg btn-dark" href="{{ route('register') }}">Registrarse</a></p>
         </div>
       </div>
     </div>
     <div class="carousel-item">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+      <img src="{{ asset('images/carousel-img-2.jpg') }}" alt="Imagen 2" class="d-block w-100" style="max-height: 400px; object-fit: cover;">
       <div class="container">
         <div class="carousel-caption">
-          <h1>2 Parte Carrousel</h1>
-          <p>Regístrate para obtener un descuento</p>
-          <p><a class="btn btn-lg btn-primary" href="{{ route('register') }}">Regístrate</a></p>
+          <h1>¿Tienes dudas?</h1>
+          <p class="opacity-75">Contacta con alguno de nuestros especialistas y te asesorarán en lo que necesites</p>
+          <p><a class="btn btn-lg btn-dark" href="#">Contactar</a></p>
         </div>
       </div>
     </div>
     <div class="carousel-item">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+      <img src="{{ asset('images/carousel-img-3.jpg') }}" alt="Imagen 3" class="d-block w-100" style="max-height: 400px; object-fit: cover;">
       <div class="container">
         <div class="carousel-caption text-end">
-          <h1>3 Parte Carrousel</h1>
-          <p>Algo mas importante a añadir</p>
-          <p><a class="btn btn-lg btn-primary" href="#">Ir</a></p>
+          <h1>No solo Hosting</h1>
+          <p class="opacity-75">Conoce todos nuestros servicios, especialmente diseñados para cubrir tus necesidades</p>
+          <p><a class="btn btn-lg btn-dark" href="{{ route('pricing.index') }}">Servicios y Tarifas</a></p>
         </div>
       </div>
     </div>
@@ -57,19 +66,19 @@
 <div class="container marketing mt-3 text-center">
   <div class="row">
     <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-      <h2 class="fw-normal">Header 1</h2>
-      <p>Servicio Rápido</p>
+      <img src="{{ asset('images/circle-img-1.jpg') }}" alt="Imagen Circle 1" class="bd-placeholder-img rounded-circle" width="140" height="140">
+      <h2 class="fw-normal">Seguro</h2>
+      <p>Seguridad ante cualquier ataque</p>
     </div>
     <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-      <h2 class="fw-normal">Header 2</h2>
-      <p>Servicio Seguro</p>
+      <img src="{{ asset('images/circle-img-2.jpg') }}" alt="Imagen Circle 2" class="bd-placeholder-img rounded-circle" width="140" height="140">
+      <h2 class="fw-normal">Personalizado</h2>
+      <p>Totalmente configurado a tu medida</p>
     </div>
     <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-      <h2 class="fw-normal">Header 3</h2>
-      <p>Único en el mercado</p>
+      <img src="{{ asset('images/circle-img-3.jpg') }}" alt="Imagen Circle 3" class="bd-placeholder-img rounded-circle" width="140" height="140">
+      <h2 class="fw-normal">Rápido</h2>
+      <p>El mejor bando de ancha para tu web</p>
     </div>
   </div>
 
@@ -77,11 +86,11 @@
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading fw-normal lh-1">Primera ventaja de nuestro servicio <span class="text-body-secondary">A destacar</span></h2>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim quam, placerat non porttitor non, suscipit vel ipsum. Aliquam nec elit nibh. Sed vehicula sit amet nisl a bibendum. Nulla varius purus id felis tincidunt, vel hendrerit quam pretium. Aliquam egestas, odio quis porta fringilla, ante lacus vulputate dui, non laoreet dolor velit ut elit. Donec vehicula libero eu nibh scelerisque rutrum. Nullam id lacinia felis. Integer maximus eros id molestie blandit. Nunc aliquet consectetur vulputate. Quisque sollicitudin egestas ex non eleifend. Phasellus eu enim nec ante luctus fringilla. Nullam sapien dolor, suscipit fermentum massa vel, viverra tempus sem.</p>
+      <h2 class="featurette-heading fw-normal lh-1">Diseñado para autónomos y pequeñas empresas</h2>
+      <p class="lead">Nuestro sistema esta desarrollado desde el inicio enfocado y pensando en aquellas personas que inician una aventura económica y cuentan con poca gente en su equipo. ¿Cumples esos requisitos? ¡Nuestros servicios son para ti!</p>
     </div>
     <div class="col-md-5">
-      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">Placeholder Imagen 500x500</text></svg>
+      <img src="{{ asset('images/information-img-1.jpg') }}" alt="Imagen Information 1" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300">
     </div>
   </div>
 
@@ -89,32 +98,13 @@
 
   <div class="row featurette">
     <div class="col-md-7 order-md-2">
-      <h2 class="featurette-heading fw-normal lh-1">Algo mas a mostrar <span class="text-body-secondary">Importante</span></h2>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim quam, placerat non porttitor non, suscipit vel ipsum. Aliquam nec elit nibh. Sed vehicula sit amet nisl a bibendum. Nulla varius purus id felis tincidunt, vel hendrerit quam pretium. Aliquam egestas, odio quis porta fringilla, ante lacus vulputate dui, non laoreet dolor velit ut elit. Donec vehicula libero eu nibh scelerisque rutrum. Nullam id lacinia felis. Integer maximus eros id molestie blandit. Nunc aliquet consectetur vulputate. Quisque sollicitudin egestas ex non eleifend. Phasellus eu enim nec ante luctus fringilla. Nullam sapien dolor, suscipit fermentum massa vel, viverra tempus sem.</p>
+      <h2 class="featurette-heading fw-normal lh-1">Servicio Estable y funcionando en menos de 24h</h2>
+      <p class="lead">Obtén hoy tu servicio con nosotros y empieza a tener una mejor imagen y una mejor gestión de tu empresa junto a nosotros. En menos de 24 horas dispondrás de una base de datos y servicio hosting totalmente funcional, con acceso a una intranet creada especialmente para ti. Regístra a tus empleados, ponles horarios, etc.. ¡Si algo que necesitas no se encuentra ahí, dinoslo y lo crearemos para ti!</p>
     </div>
     <div class="col-md-5 order-md-1">
-      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">Placeholder Imagen 500x500</text></svg>
+      <img src="{{ asset('images/information-img-2.jpg') }}" alt="Imagen Information 1" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300">
     </div>
   </div>
-
-  {{-- <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading fw-normal lh-1">Más cosas a destacar <span class="text-body-secondary">Importante</span></h2>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim quam, placerat non porttitor non, suscipit vel ipsum. Aliquam nec elit nibh. Sed vehicula sit amet nisl a bibendum. Nulla varius purus id felis tincidunt, vel hendrerit quam pretium. Aliquam egestas, odio quis porta fringilla, ante lacus vulputate dui, non laoreet dolor velit ut elit. Donec vehicula libero eu nibh scelerisque rutrum. Nullam id lacinia felis. Integer maximus eros id molestie blandit. Nunc aliquet consectetur vulputate. Quisque sollicitudin egestas ex non eleifend. Phasellus eu enim nec ante luctus fringilla. Nullam sapien dolor, suscipit fermentum massa vel, viverra tempus sem.</p>
-    </div>
-    <div class="col-md-5">
-      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-    </div>
-  </div>
-  --}}
   <hr class="featurette-divider">
-
 </div>
-
-<footer class="container">
-  <p class="float-end link-info"><a href="#">Volver arriba</a></p>
-  <p>&copy; 2024 ADMAGA Solutions</p>
-</footer>
 @endsection

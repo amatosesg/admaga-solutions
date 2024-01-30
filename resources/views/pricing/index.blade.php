@@ -38,63 +38,55 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row" class="text-start">Ventaja 1</th>
+                        <th scope="row" class="text-start">Base de Datos</th>
                         <td>
                             <svg class="bi" width="24" height="24">
                                 <use xlink:href="#check"></use>
                             </svg>
                         </td>
                         <td>
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check"></use>
-                            </svg>
+                            <p>Modificable</p>
                         </td>
                         <td>
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check"></use>
-                            </svg>
+                            <p>Personalizada</p>
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row" class="text-start">Ventaja 2</th>
+                        <th scope="row" class="text-start">Web</th>
                         <td>
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check"></use>
-                            </svg>
+                            <p>Fija</p>
                         </td>
                         <td>
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check"></use>
-                            </svg>
+                           <p>Dinámica</p>
                         </td>
                         <td>
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check"></use>
-                            </svg>
+                            <p>Dinámica Personalizada</p>
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row" class="text-start">Ventaja 3</th>
-                        <td></td>
+                        <th scope="row" class="text-start">Intranet</th>
                         <td>
                             <svg class="bi" width="24" height="24">
                                 <use xlink:href="#check"></use>
                             </svg>
                         </td>
                         <td>
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check"></use>
-                            </svg>
+                            <p>Premium</p>
+                        </td>
+                        <td>
+                            <p>Premium + 1 Aplicación Personalizada</p>
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row" class="text-start">Ventaja 4</th>
-                        <td></td>
-                        <td></td>
+                        <th scope="row" class="text-start">Usuarios</th>
                         <td>
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check"></use>
-                            </svg>
+                            <p>1</p>
+                        </td>
+                        <td>
+                            <p>1-10</p>
+                        </td>
+                        <td>
+                            <p>Ilimitados</p>
                         </td>
                     </tr>
                 </tbody>

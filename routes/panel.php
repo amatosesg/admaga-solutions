@@ -34,7 +34,7 @@ Route::get('users', 'UserController@index')->name('users.index');
 /**
  * POST
  */
-Route::post('services', 'Servicservices/activeeController@store')->name('services.store');
+Route::post('services', 'ServiceController@store')->name('services.store');
 
 Route::post('users/admin/{user}', 'UserController@toggleAdmin')->name('users.admin.toggle');
 

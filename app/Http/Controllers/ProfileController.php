@@ -8,6 +8,7 @@ use App\Http\Requests\ProfileRequest;
 use App\Http\Requests\ConfigureServiceRequest;
 use Illuminate\Support\Facades\DB;
 use App\Models\Order;
+use Illuminate\Support\Facades\Storage;
 
 class ProfileController extends Controller
 {

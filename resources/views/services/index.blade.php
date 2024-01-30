@@ -37,7 +37,7 @@
                         <td>{{ $service->title }}</td>
                         <td>{{ $service->description }}</td>
                         <td>{{ $service->price }}</td>
-                        <td>{{ $service->status }}</td>
+                        <td>{{ $service->status == 'available' ? 'Disponible' : 'No disponible' }}</td>
                         <td>
                             <a class="btn btn-link" href="{{ route('services.show', ['service' => $service->id]) }}">Ver</a>
                             <a class="btn btn-link" href="{{ route('services.edit', ['service' => $service->id]) }}">Editar</a>

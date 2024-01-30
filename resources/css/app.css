@@ -55,4 +55,9 @@
     border: 1px solid #ccc;
     display: inline-block;
     margin-right: 10px;
-  }
+}
+
+.image-carousel-container{
+    max-height: 400px;
+    object-fit: cover;
+}
