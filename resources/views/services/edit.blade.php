@@ -14,7 +14,7 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card">
-                <div class="card-header">{{ __('Servicio ' . $service->title) }}</div>
+                <div class="card-header">{{ __('Servicio ' . $service->title . ' ('. $service->id .')') }}</div>
 
                 <div class="card-body mx-5">
                     <form method="POST" action="{{ route('services.update', ['service' => $service->id]) }}">
@@ -35,12 +35,12 @@
                         <div class="row mb-3">
                             <label for="status">Estado</label>
                             <select class="form-select" name="status" required>
-                                <option {{ old('status') == 'unavailable' ? 'selected' : (old('status') == 'available' ? '' : ($service->status == 'unavailable' ? 'selected' : '')) }} value="unavailable">Unavailable</option>
-                                <option {{ old('status') == 'available' ? 'selected' : (old('status') == 'unavailable' ? '' : ($service->status == 'available' ? 'selected' : '')) }} value="available">Available</option>
+                                <option {{ old('status') == 'unavailable' ? 'selected' : (old('status') == 'available' ? '' : ($service->status == 'unavailable' ? 'selected' : '')) }} value="unavailable">No Disponible</option>
+                                <option {{ old('status') == 'available' ? 'selected' : (old('status') == 'unavailable' ? '' : ($service->status == 'available' ? 'selected' : '')) }} value="available">Disponible</option>
                             </select>
                         </div>
                         <div class="row mb-3 d-grid col-6 mx-auto">
-                            <button class="btn btn-primary btn-lg" type="submit">Editar Servicio</button>
+                            <button class="btn btn-outline-primary btn-lg" type="submit">Editar Servicio</button>
                         </div>
                     </form>
                 </div>
