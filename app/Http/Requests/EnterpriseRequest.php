@@ -23,7 +23,7 @@ class EnterpriseRequest extends FormRequest
     {
         return [
             'name' => ['required', 'string', 'max:255'],
-            'description' => ['required', 'string', 'max:1000'],
+            // 'description' => ['required', 'string', 'max:1000'],
             'bbdd_name' => ['required', 'string', 'max:50', 'unique:enterprises'],
             'url_name' => ['required', 'string', 'max:100', 'unique:enterprises'],
             'image' => ['nullable', 'image']

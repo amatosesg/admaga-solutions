@@ -48,7 +48,7 @@
                                     Configurar
                                 </a>
                             @else
-                                <a class="btn btn-link" href="" target="_blank">
+                                <a class="btn btn-link" href="{{ route('enterprises.show', ['order' => $service['order_id']]) }} ">
                                     Ver
                                 </a>
                             @endif

@@ -6,11 +6,21 @@ use App\Models\Enterprise;
 use App\Models\Order;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\EnterpriseRequest;
+use Illuminate\Http\Request;
 use App\Http\Requests\UpdateEnterpriseRequest;
 use Illuminate\Support\Facades\DB;
 
 class EnterpriseController extends Controller
 {
+
+    public function show(Request $request){
+        $enterprise = Enterprise::where('order_id', $request->order)->first();
+        
+        return view('profiles.enterprises.show')->with([
+            'enterprise' => $enterprise
+        ]);
+    }
+
     /**
      * Store a newly created resource in storage.
      */

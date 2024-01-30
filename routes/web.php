@@ -36,6 +36,8 @@ Route::get('profile/services', 'ProfileController@services')->name('profiles.ser
 
 Route::get('profile/configure', 'ProfileController@configure')->name('profiles.configure.services')->middleware(['verified']);
 
+Route::get('enterprise/{order}', 'EnterpriseController@show')->name('enterprises.show')->middleware(['verified']);
+
 /**
  * POST
  */

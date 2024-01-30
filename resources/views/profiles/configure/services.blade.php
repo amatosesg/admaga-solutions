@@ -24,7 +24,7 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3">
+                        {{-- <div class="row mb-3">
                             <label for="description" class="col-md-4 col-form-label text-md-end">{{ __('Descripción') }}</label>
 
                             <div class="col-md-6">
@@ -36,7 +36,7 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div>
+                        </div> --}}
 
                         <div class="row mb-3">
                             <label for="colors" class="col-md-4 col-form-label text-md-end">{{ __('Colores de la Empresa') }}</label>
