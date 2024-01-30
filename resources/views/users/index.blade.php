@@ -7,8 +7,10 @@
 @section('first-container', 'container')
 
 @section('content')
-    <h1>Lista de Usuarios</h1>
-
+    <div class="py-3 text-center">
+        <h1>Lista de Usuarios</h1>
+    </div>
+    <hr>
     @empty ($users)
         <div class="alert alert-warning">
             No hay usuarios en la aplicación
